@@ -6,7 +6,7 @@ from utils import color_correction
 
 BACKGROUND_COLOR = (10, 10, 10, 160)
 TEXT_COLOR = BOX_COLOR = (230, 230, 230)
-FONT = ImageFont.truetype(font='arial', size=24)
+FONT = ImageFont.load_default()
 EPSILON = 1E-9
 
 
