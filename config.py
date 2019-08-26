@@ -14,7 +14,7 @@ def get_dataset_config(dataset):
                                                 [0.0786, -0.5070, 1.4284]]
     elif dataset == 'MultiCam':
         db_config['dataset'] = r'MultiCam'
-        db_config['model_dir'] = r'pretrained_models\MultiCam'
+        db_config['model_dir'] = r'pretrained_models/MultiCam'
         db_config['input_bits'] = 8
         db_config['valid_bits'] = 8
         db_config['darkness'] = 0.
