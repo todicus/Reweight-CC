@@ -372,7 +372,9 @@ def get_line_info(line):
 def get_camera_model(img_name):
     if '_' in img_name:
         camera_model = img_name.split('_')[0]
-        camera_model = 'Canon5D' if camera_model == 'IMG'
+        if camera_model == 'IMG':
+            camera_model = 'Canon5D'
+
     elif '8D5U' in img_name:
         camera_model = 'Canon1D'
     else:
